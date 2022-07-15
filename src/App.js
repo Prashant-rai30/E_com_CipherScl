@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+
+import React ,{useState}from "react";
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import SingleProductPage from "./SingleProduct/SingleProduct"; 
+import ProductSection from "./components/ProductSection/ProductSection";
+import CateogrySectionelec from "./components/CateogrySection/elec/CateogrySectionelec";
+import Jewel from "./components/CateogrySection/Jewellery/Jewel";
+import Men from "./components/CateogrySection/men/Men"
+import Women from "./components/CateogrySection/women/Women"
 
 function App() {
+  // const [productCatName, setProductCatName] = useState("")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<ProductSection />} />
+
+          <Route path="/electronics" element={<CateogrySectionelec  />} />
+          <Route path="/jewellery" element={<Jewel  />} />
+          <Route path="/mens-clothing" element={<Men  />} />
+          <Route path="/womens-clothing" element={<Women  />} />
+          {/* <Route path="/electronics/:id" element={<SingleProductPage />}  /> */}
+        </Routes>
+
+      </div>
+    </BrowserRouter>
   );
 }
 

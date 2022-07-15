@@ -1,0 +1,38 @@
+
+.header{
+    font-size: 30px;
+    font-weight: bold;
+}
+.topclass{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+.section_card:hover{
+    transform: scale(1.2);
+}
+.section_card{
+    transition: 0.6s;
+    padding-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: chartreuse;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+
+}
+.section_card_img{
+    padding-bottom: 25px;
+    width:300px;
+}
+.section_card_img>img{
+    width: 300px;
+    height: 200px;
+}
+.section_card_p{
+    font-size: 20px;
+}
