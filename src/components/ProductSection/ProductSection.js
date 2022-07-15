@@ -6,6 +6,7 @@ import women from "../../images/Product Section/women.jpg"
 import jewellery from "../../images/Product Section/jewellery.jpg"
 import electronics from "../../images/Product Section/elec.jpg"
 import Navbar from '../Navbar/Navbar'
+import shop from "../../images/Product Section/shop.jpg"
 
 function ProductSection() {
 
@@ -18,6 +19,7 @@ function ProductSection() {
         <>
             <Navbar />
             <div className='section_container'>
+                <img src={shop} className="ban_img"/>
                 <p className='header' >Let's Shop</p>
                 <div className='topclass'>
 

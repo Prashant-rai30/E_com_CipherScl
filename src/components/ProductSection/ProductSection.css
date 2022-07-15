@@ -3,6 +3,11 @@
     font-size: 30px;
     font-weight: bold;
 }
+.ban_img{
+ 
+    height: 400px;
+   
+}
 .topclass{
     display: flex;
     flex-direction: row;
@@ -23,6 +28,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
+    margin-bottom: 135px;
 
 }
 .section_card_img{

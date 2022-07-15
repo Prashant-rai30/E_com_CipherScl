@@ -1,5 +1,4 @@
-
-import React ,{useState}from "react";
+import React, { useState } from "react";
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import SingleProductPage from "./SingleProduct/SingleProduct"; 
@@ -8,6 +7,7 @@ import CateogrySectionelec from "./components/CateogrySection/elec/CateogrySecti
 import Jewel from "./components/CateogrySection/Jewellery/Jewel";
 import Men from "./components/CateogrySection/men/Men"
 import Women from "./components/CateogrySection/women/Women"
+import Signup from "./components/CateogrySection/Signup/Signup"
 
 function App() {
   // const [productCatName, setProductCatName] = useState("")
@@ -16,11 +16,11 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<ProductSection />} />
-
-          <Route path="/electronics" element={<CateogrySectionelec  />} />
-          <Route path="/jewellery" element={<Jewel  />} />
-          <Route path="/mens-clothing" element={<Men  />} />
-          <Route path="/womens-clothing" element={<Women  />} />
+          <Route path="/sign-up" element={<Signup />} />
+          <Route path="/electronics" element={<CateogrySectionelec />} />
+          <Route path="/jewellery" element={<Jewel />} />
+          <Route path="/mens-clothing" element={<Men />} />
+          <Route path="/womens-clothing" element={<Women />} />
           {/* <Route path="/electronics/:id" element={<SingleProductPage />}  /> */}
         </Routes>
 
